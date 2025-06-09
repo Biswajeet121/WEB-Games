@@ -1,0 +1,277 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+main {
+    padding: 20px;
+}
+
+.games {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.game {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.game h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.game img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.game img:hover {
+    transform: scale(1.1);
+}
+footer {
+    background-color: #f4f4f9;
+    color: black;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 9;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+.game:hover {
+    background-color: #f0f8ff;
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 600px) {
+    .games {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .game {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+/* Rock-Paper-Scissors Specific Styles */
+.rps-game {
+    padding: 20px;
+    text-align: center;
+}
+
+.options {
+    margin: 20px 0;
+}
+
+.options button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.options button:hover {
+    background-color: black;
+}
+
+.result {
+    margin-top: 30px;
+}
+
+.result p {
+    font-size: 1.3em;
+    margin: 10px 0;
+    color: #333;
+}
+
+#winner {
+    font-weight: bold;
+    color: #2e8b57;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+.scoreboard {
+    margin: 20px 0;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.scoreboard p {
+    color: #333;
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    .options button {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+
+    .scoreboard {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+.options button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.options button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+#winner {
+    animation: highlight 0.5s ease-in-out;
+}
+
+@keyframes highlight {
+    0% { color: black; }
+    50% { color: red; }
+    100% { color: black; }
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.tic-tac-toe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+}
+
+.winner-message {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4CAF50;
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

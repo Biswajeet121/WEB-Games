@@ -1,0 +1,127 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    flex-direction: column;
+}
+
+/* Header Styling */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Chessboard Container Styling */
+.chess-board {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    gap: 0;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    border: 2px solid #333; /* Optional: Adds a border around the chessboard */
+}
+
+/* Individual Chessboard Cell Styling */
+.cell {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Black and White Cells */
+.black {
+    background-color: #333;
+}
+
+.white {
+    background-color: #fff;
+}
+
+/* Add Chess Piece Style (Example for piece placement) */
+.piece {
+    font-size: 36px;
+    text-align: center;
+}
+
+/* Add piece colors (example for black and white pieces) */
+.black-piece {
+    color: #333;
+}
+
+.white-piece {
+    color: #fff;
+}
+
+/* Optional Styling for the chessboard's border and cells */
+.chess-board {
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+/* Highlighting Cell When Selected */
+.cell.selected {
+    background-color: rgba(255, 255, 0, 0.5); /* Yellow highlight when selected */
+}
+
+/* For Responsive Design */
+@media (max-width: 768px) {
+    .chess-board {
+        grid-template-columns: repeat(8, 50px);
+        grid-template-rows: repeat(8, 50px);
+    }
+
+    .cell {
+        width: 50px;
+        height: 50px;
+    }
+}
+.chess-board {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.white {
+    background-color: #f0f0f0;
+}
+
+.black {
+    background-color: #404040;
+}
+
+.selected {
+    border: 2px solid blue;
+}
+
+.piece {
+    font-size: 32px;
+}
+
+.has-piece {
+    display: block;
+}

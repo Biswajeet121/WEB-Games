@@ -1,0 +1,64 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    flex-direction: column;
+}
+
+/* Header Styling */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Game Buttons */
+button {
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Game Result Text */
+.result {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Player and Computer Display */
+.display {
+    display: flex;
+    gap: 30px;
+}
+
+/* Player Choices and Results Styling */
+.choice {
+    padding: 20px;
+    font-size: 40px;
+}
